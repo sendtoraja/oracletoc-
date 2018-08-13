@@ -1,0 +1,97 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accept</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style.css">    
+</head>
+<body>
+    <div class="container-fluid prel">
+        <div class="row">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-xs-8">
+                            <div class="logo">
+                                <img src="~/Content/img/logo.png" alt="logo" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-4"></div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="container bg-color">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="gap-sm"></div>
+                <div class="radio-inline">
+                    <label><input type="radio" name="optradio" id="rbtnAccept">Accept</label>
+                </div>
+                <div class="radio-inline">
+                    <label><input type="radio" name="optradio" id="rbtnReject">Reject</label>
+                </div>
+            </div>
+        </div>
+        <div class="gap-sm"></div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="row">
+                    <div class="col-sm-4" id="sel2">
+                        <div class="form-group">
+                            <select class="form-control" id="dropAccept">
+                                <option>Please Select</option>
+                                <option>Own Fund</option>
+                                <option>Sale of Property</option>
+                                <option>Internal closure / rebooking for loan enhancement</option>
+                                <option>BT Better ROI</option>
+                                <option>BT Topup not possible</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 " id="sel1">
+                        <div class="form-group">
+                            <select class="form-control" id="dropReject">
+                                <option>Please Select</option>
+                                <option>ROI Switch</option>
+                                <option>TOP Up Loan</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-8"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="form-group" id="divremarks">
+                    <label for="comment">Remarks:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-2 col-sm-offset-1">
+                        <input type="button" id="btnSubmit" class="form-control btn btn-success" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script type="text/javascript" src="~/JavaScript/Lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="~/JavaScript/Lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/JavaScript/CRM/ApprovalAccept_Reject.js"></script>    
+</body>
+</html>
